@@ -208,10 +208,7 @@ body
   border-radius: 8px;
   position: relative;
   top : 20px;
-  background-color: rgba(0,0,0,0.10);
-  color : #fff;
 }
-
 footer
 {
 	width: 100%;
@@ -224,16 +221,7 @@ footer
 	display: flex;
 	flex-wrap: wrap;
 }
-.mess
-{
-	outline: red;
-	border-radius: 8px;
-	position: relative;
-	top : 20px;
-	background-color: white;
-	color : #fff;
 
-}
 .box
 {
 	flex : 1;
