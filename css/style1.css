@@ -3,7 +3,7 @@
 }
 
 body { 
-  background-image: url("Images/bg1.jpg");
+  background-image: url("../Images/sitelogo");
 
 
             animation: fadeInAnimation ease 3s; 
