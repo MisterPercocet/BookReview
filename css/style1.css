@@ -398,7 +398,7 @@ button[type=submit]:hover
  {
  	background:#90EE90;
  	opacity: 0.7;
- 	cursor: pointer;
+ 
  }
  button{
   font-size: 24px;
