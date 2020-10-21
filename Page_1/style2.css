@@ -3,7 +3,7 @@
 }
 
 body { 
-	 background: url("frontbg.jpg");
+	 background: url("bg2.jpg");
             animation: fadeInAnimation ease 3s; 
             animation-iteration-count: 1; 
             animation-fill-mode: forwards; 
