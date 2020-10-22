@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="css/style3.css" >
+<link rel="stylesheet" href="style3.css" >
 
 <head>
 	<meta charset = "utf-8>
@@ -16,7 +16,7 @@
 <body>
 
 	<div class = "overlaylogo">
-      <img src="Images/sitelogo.jpg" alt = "Readers Hub Logo" class = "image">
+      <img src="sitelogo.jpg" alt = "Readers Hub Logo" class = "image">
       <div class = "overlaytextclass">
       <div class = "overlaytext">S.E IT PROJECT
       </div>
@@ -40,6 +40,7 @@
 			<input type="text" name = "publicationyear" placeholder="Year Of Publication" required >
 			<br>
 			<br>
+			</form>
 			<div class = "<container">
 				<div class = "rating-wrapper">
 						  <input type = "radio" name ="rating" id ="star1" > 
@@ -55,7 +56,7 @@
 			  
 					  </div>
 				  </div>
-			  
+			<form action = "insert3.php" method = "POST">
 			<br>
 			<textarea id = "styled" name = "bookreview" placeholder="Write Review" cols="47" rows="10">
 			</textarea>
