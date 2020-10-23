@@ -14,7 +14,7 @@ if (!empty($username) || !empty($authorname) ||!empty($bookname)|| !empty($genre
 {
 	$host = "localhost";
 	$dbusername = "root";
-	$dbPassword = "root";
+	$dbPassword = "";
 	$dbname = "dbmspblproject" ;
 
 	$conn = new mysqli($host, $dbusername, $dbPassword, $dbname);
