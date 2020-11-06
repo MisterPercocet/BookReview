@@ -7,10 +7,9 @@ $bookname = $_POST['bookname'];
 $genre = $_POST['genre'];
 $publisher = $_POST['publisher'];
 $publicationyear = $_POST['publicationyear'];
-$bookreview = $_POST['bookreview'];
 
 if (!empty($username) || !empty($authorname) ||!empty($bookname)|| !empty($genre)
-	||!empty($publisher)|| !empty($publicationyear)|| !empty($bookreview))
+	||!empty($publisher)|| !empty($publicationyear))
 {
 	$host = "localhost";
 	$dbusername = "root";
@@ -28,7 +27,7 @@ if (!empty($username) || !empty($authorname) ||!empty($bookname)|| !empty($genre
 	{
 		$SELECT = "SELECT username From reviewformtable Where username = ? Limit 1";
 		$INSERT = "INSERT Into reviewformtable (username,authorname,bookname,genre
-		,publisher,publicationyear,bookreview) values (?,?,?,?,?,?,?)";
+		,publisher,publicationyear) values (?,?,?,?,?,?)";
 
 		$stmt =$conn->prepare($SELECT);
 		$stmt->bind_param("s" , $username);
@@ -41,7 +40,7 @@ if (!empty($username) || !empty($authorname) ||!empty($bookname)|| !empty($genre
 			$stmt->close();
 
 			$stmt = $conn->prepare($INSERT);
-			$stmt-> bind_param("sssssss" , $username , $authorname ,$bookname,$genre,$publisher,$publicationyear,$bookreview);
+			$stmt-> bind_param("sssssss" , $username , $authorname ,$bookname,$genre,$publisher,$publicationyear);
 			$stmt-> execute();
 			echo "New Record Inserted sucessfully";
 		}else{
