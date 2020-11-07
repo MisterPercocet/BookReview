@@ -1,4 +1,3 @@
-
 const checkpoint = 300;
  
 window.addEventListener("scroll", () => {

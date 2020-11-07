@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style3.css" >
 
 <head>
 	<meta charset = "utf-8>
 	<meta name = "viewport" content = "width=device-width , initial-scale =1.0">
 	<title>Review Form</title>
-
-
+	<link rel = "stylesheet" type = "text/css" href = "stylethree.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
-
 	<script src = "https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body>
+<body> 
 	
-
 	<div class = "overlaylogo">
       <img src="sitelogo.jpg" alt = "Readers Hub Logo" class = "image">
       <div class = "overlaytextclass">
       <div class = "overlaytext">S.E IT PROJECT
       </div>
     </div>
-  </div> 
+  </div>  
 
 	<div class = "wrap">
 		<h2>Review Book Here</h2>
-		<form action = "insert3.php" method = "POST">
-			<input type  = "text" name = "username" placeholder = "Reviewer's Name " required>
+		<form action = "insert.php" method = "POST">
+			<input type  = "text" name = "username" placeholder = "Reviewer's Name" required>
 			<br>
 			<input type  = "text" name = "authorname" placeholder = "Author's Name" required>
 			<br>
@@ -38,26 +34,6 @@
 			<input type = "text" name = "publisher" placeholder="Publisher" required>
 			<br>
 			<input type="text" name = "publicationyear" placeholder="Year Of Publication" required >
-			<br><br>
-			<div class = "<container">
-				<div class = "rating-wrapper">
-						  <input type = "radio" name ="rating" id ="star1" > 
-						  <label for = "star1"></label>
-						  <input type = "radio" name ="rating" id ="star2" > 
-						  <label for = "star2"></label>
-						  <input type = "radio" name ="rating" id ="star3" > 
-						  <label for = "star3"></label>
-						  <input type = "radio" name ="rating" id ="star4" > 
-						  <label for = "star4"></label>
-						  <input type = "radio" name ="rating" id ="star5" > 
-						  <label for = "star5 "></label>
-			  
-					  </div>
-				  </div>
-			<br><br>
-		    </form>
-			
-			<form action = "insert3.php" method = "POST">
 			<br>
 			<textarea id = "styled" name = "bookreview" placeholder="Write Review" cols="47" rows="10">
 			</textarea>
@@ -68,6 +44,7 @@
 			
 		</form>
 	</div> 
+
 	<footer>
 		<div class= "container">
 			<div class = "box">
@@ -116,7 +93,7 @@
 					<p></p>
 					<input type = "email" name="mail" id="mail" required>
 					<label for = "mess">Message<span>*</span></label>
-					<input name="mess" id="mess"rows = "5"required></input>
+					<textarea name="mess" id="mess"rows = "5"required></textarea>
 					<button type = "submit">Send</button>
 				</form>
 			</div>

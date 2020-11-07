@@ -1,7 +1,7 @@
 
 body
 {
-	background-image: url("Images/bg3.jpg");
+	background: url("quill.jpg");  
 	background-size: cover;
 	font-family: 'Roboto Condensed', sans-serif;
 	background-attachment: scroll;
@@ -18,63 +18,7 @@ body
                 opacity: 1; 
             } 
         }
- 
-		.container
-{
-	margin-left: 100px;
-	margin: auto;
-	text-align: center;
-}
-.rating-wrapper
-{
-	direction : rtl;
-}
-
-.rating-wrapper input
-{
-	display: none;
-}
-
-.rating-wrapper label
-{
-	margin-top: -200px;
-	display: inline-block;
-	width: 66px;
-	position: relative;
-	cursor: pointer; 
-	top: -53px;
-}
-
-.rating-wrapper label:before
-{
-	content : "\2605";
-	position: absolute;
-	font-size: 60px;
-	display: inline-block;
-	top:0;
-	left: 0;
-}
-
-.rating-wrapper label:after
-{
-	content : "\2605";
-	position: absolute;
-	font-size: 60px;
-	display: inline-block;
-	top:0;
-	left: 0;
-	color:yellow;
-	opacity: 0;
-}
-
-.rating-wrapper label:hover:after,
-.rating-wrapper label:hover ~ label:after,
-.rating-wrapper input:checked ~ label:after
-{
-
-	opacity: 1;
-}
-
+        
 .overlaylogo
 {
 	position: relative;
@@ -93,17 +37,14 @@ body
 .overlaytextclass
 {
 	position: absolute;
-  bottom: 120%;
+  bottom: 100%;
   left: 0;
   right: 0;
   background-color: #008CBA;
-  width: 150px	;
+  overflow: hidden;
+  width: 150px;
+  height: 0;
   transition: .5s ease;
-  height: auto;
-  border-radius: 30%;
-  padding: 5px;
-  
-  
   }
   .overlaylogo:hover .overlaytextclass
   {
@@ -208,10 +149,7 @@ body
   border-radius: 8px;
   position: relative;
   top : 20px;
-  background-color: rgba(0,0,0,0.10);
-  color : #fff;
 }
-
 footer
 {
 	width: 100%;
@@ -224,16 +162,7 @@ footer
 	display: flex;
 	flex-wrap: wrap;
 }
-.mess
-{
-	outline: red;
-	border-radius: 8px;
-	position: relative;
-	top : 20px;
-	background-color: white;
-	color : #fff;
 
-}
 .box
 {
 	flex : 1;
