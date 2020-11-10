@@ -47,6 +47,184 @@
   box-sizing: border-box;
 }
 
+
+
+.wrap
+ {
+ 	position: relative;
+ 	top : -40px;
+ 	max-width: 513px;
+ 	border-radius: 20px;
+ 	margin:auto;
+ 	background: rgba(0,0,0,0.8);
+ 	padding: 40px;
+ 	color:#fff;
+ 	margin-top : 100px; 
+ }
+
+ h2
+ {
+ 	text-align: center;
+ }
+
+ input[type=text]
+ {
+ 	width:100%;
+ 	box-sizing: border-box;
+ 	padding: 18px 5px;
+ 	background: rgba(0,0,0,0.10);
+ 	outline: none;
+ 	border: none;
+ 	border-bottom: 1px dotted #fff;
+ 	color : #fff;
+ 	border-radius: 5px;
+ 	margin : 5px;
+ 	font-weight: bold; 
+ }
+ input[type=submit]
+ {
+ 	width:100%;
+ 	box-sizing: border-box;
+ 	padding:10px 0;
+ 	margin-top: 30px;
+ 	outline:none;
+ 	border: none;
+ 	background: #60adde;
+ 	opacity: 0.7;
+ 	border-radius: 20px;
+ 	font-size: 20px;
+ 	color: #fff;
+ 	position: relative;
+ 	top : 30px;
+ }
+ input[type=reset]
+ {
+ 	width:50%;
+ 	box-sizing: border-box;
+ 	padding:10px 0;
+ 	margin-top: 30px;
+ 	outline:none;
+ 	border: none;
+ 	background: #60adde;
+ 	opacity: 0.7;
+ 	border-radius: 20px;
+ 	font-size: 20px;
+ 	color: #fff;
+ 	position: relative;
+ 	top : 45px;
+   left: 1px;
+ }
+
+ input[type=submit]:hover 
+ {
+ 	background:#90EE90;
+ 	opacity: 0.7;
+ 	cursor: pointer;
+ }
+
+ input[type=reset]:hover
+ {
+ 	background:#B22222;
+ 	opacity: 0.7;
+   cursor: pointer;
+ }
+ textarea 
+ {
+  outline: red;
+  border-radius: 8px;
+  position: relative;
+  top : 20px;
+  width: 279px;
+    height: 86px; 
+    background-color:   rgba(0, 0, 0, 0.1);
+}
+
+.container
+{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box
+{
+	flex : 1;
+	margin : 15px;
+	min-width: 300px;
+	left: 100%;
+}
+.box h2
+{
+	text-transform: uppercase; 
+	letter-spacing: 3px;
+	border-bottom: 2px solid #555;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.box h2::before
+{
+	content : " ";
+	width: 100px;
+	height:100%;
+	border-bottom: 2px solid yellow ;
+	position: absolute;
+}
+.box a
+{
+	color: #aaa;
+	text-decoration: none;
+	display: inline-block;
+}
+.box a i
+{
+	background: #333;
+	width:40px;
+	height:40px;
+	text-align : center;
+	line-height: 40px;
+	margin-right:5px;
+	transition: 05s linear;
+}
+.box a:hover , .box a:hover i
+{
+	color: crimson;
+	border-radius: 50%;
+}
+.social
+{
+	margin-top: 5px;
+}
+.address a
+{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 1.3em;
+}
+
+
+span
+{
+	color : crimson;
+}
+
+.author
+{
+	height:25px;
+	width:100%;
+	background: black;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+button[type=submit]:hover 
+ {
+ 	background:#90EE90;
+ 	opacity: 0.7;
+ 	cursor: pointer;
+ }
 html {
   font-family: sans-serif;
   line-height: 1.15;
