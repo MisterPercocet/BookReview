@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -13,9 +14,12 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/page3.css">
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/page1.css" rel="stylesheet" />
+        
     </head>
+  
+                    
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -34,16 +38,39 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
         <header class="masthead">
             <div class="container">
              
-                <div class="masthead-heading text-uppercase">Review A Book Below
-                </div>
-                
+               
+                <div class = "wrap">
+                    <h2>Review Book Here</h2>
+                    <form action = "insert.php" method = "POST">
+                        <input type  = "text" name = "username" placeholder = "Reviewer's Name" required>
+                        <br>
+                        <input type  = "text" name = "authorname" placeholder = "Author's Name" required>
+                        <br>
+                        <input type  = "text" name = "bookname" placeholder = "Name Of The Book" required>
+                        <br>
+                        <input type = "text" name = "genre" placeholder="Genre " required>
+                        <br>
+                        <input type = "text" name = "publisher" placeholder="Publisher" required>
+                        <br>
+                        <input type="text" name = "publicationyear" placeholder="Year Of Publication" required >
+                        <br>
+                        <textarea id = "styled" name = "bookreview" placeholder="Write Review" cols="47" rows="10">
+                        </textarea>
+                        <input type = "reset" value = "CLEAR FORM">
+                        <br>
+                        <input type = "submit" value = "SUBMIT REVIEW">
+                        <br><br>
+                        </form>
+                        </div>
 
             </div>
         </header>
+      
+        <!-- Masthead-->
+      
         
         
         <!-- Contact-->
