@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style >
+    div {
+  background-image: url('assets/img/2bg.jpg');
+}
     .boxb{
         border: 2px solid red;
     }
@@ -28,6 +31,7 @@
         -webkit-box-shadow: 0px 2px 5px -1px rgba(122,122,122,1);
         -moz-box-shadow: 0px 2px 5px -1px rgba(122,122,122,1);
         box-shadow: 0px 2px 5px -1px rgba(122,122,122,1);
+
     }
     footer{
         margin-top:30px;
